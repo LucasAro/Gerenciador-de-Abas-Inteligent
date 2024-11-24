@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Gerenciador de Abas</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				padding: 20px;
+				max-width: 300px;
+			}
+
+			h1 {
+				font-size: 18px;
+				text-align: center;
+			}
+
+			label,
+			button {
+				display: block;
+				margin: 10px 0;
+			}
+
+			input {
+				width: 100%;
+				padding: 5px;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<h1>Gerenciador de Abas</h1>
+		<div>
+			<label for="inactivityLimit">Definir tempo de inatividade (minutos):</label>
+			<input type="number" id="inactivityLimit" min="1" placeholder="Ex: 5">
+			<button id="saveLimit">Salvar Configuração</button>
+		</div>
+		<div>
+			<button id="saveSession">Salvar Sessão Atual</button>
+			<p id="status"></p>
+		</div>
+		<script src="popup.js"></script>
+	</body>
+
+</html>
